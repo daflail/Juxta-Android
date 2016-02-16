@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/action_timeline"
+        android:title="@string/action_timeline"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_nearme"
+        android:title="@string/action_nearMe"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_profile"
+        android:title="@string/action_profile"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_followers"
+        android:title="@string/action_followers"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_chat"
+        android:title="@string/action_chat"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_contactUs"
+        android:title="@string/action_contactUs"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_shareJuxta"
+        android:title="@string/action_shareJuxta"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
