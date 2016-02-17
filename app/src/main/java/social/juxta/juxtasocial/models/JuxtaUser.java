@@ -1,75 +1,52 @@
 package social.juxta.juxtasocial.models;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class JuxtaUser {
 
-    private String id;
-    private String email;
-    private String firstName;
-    private String lastName;
-    private JuxtaImage avatar;
-    private JuxtaImage photo1;
-    private JuxtaImage photo2;
-    private JuxtaImage photo3;
-    private JuxtaImage photo4;
-    private String tagline;
-    private Date lastActive;
-    private Date lastActivityCreatedAt;
-    private float averageReview;
-    private String bio;
-    private String fbId;
-    private NSArray ownedActivities;
-    private JUXBadge* lastEarnedBadge;
-    private NSArray* badges;
-    private NSArray* reviews;
-    private NSArray* participations;
-    private int approvedParticipationCount;
-    private int subscribedToCount;
-    private int subscribersCount;
-    private NSArray* subscribers;
-    private NSArray* subscribedTo;
+    public String id;
+    public String email;
+    public String firstName;
+    public String lastName;
+    public JuxtaImage avatar;
+    public JuxtaImage photo1;
+    public JuxtaImage photo2;
+    public JuxtaImage photo3;
+    public JuxtaImage photo4;
+    public String tagline;
+    public Date lastActive;
+    public Date lastActivityCreatedAt;
+    public float averageReview;
+    public String bio;
+    public String fbId;
+    public List<JuxtaActivity> ownedActivities = new ArrayList<JuxtaActivity>();
+    public JuxtaBadge lastEarnedBadge;
+    public List<JuxtaBadge> badges = new ArrayList<JuxtaBadge>();
+    public List<JuxtaReview> reviews = new ArrayList<JuxtaReview>();
+    public List<JuxtaParticipation> participations = new ArrayList<JuxtaParticipation>();
+    public int approvedParticipationCount;
+    public int subscribedToCount;
+    public int subscribersCount;
+    public List<JuxtaSubscription> subscribers = new ArrayList<JuxtaSubscription>();
+    public List<JuxtaSubscription> subscribedTo = new ArrayList<JuxtaSubscription>();
 
-//    #import <Foundation/Foundation.h>
-//            #import <Mantle/Mantle.h>
-//            #import "MTLManagedObjectAdapter.h"
-//
-//            @class JUXBadge;
-//
-//
-//    @interface JUXUser : JUXModel
-//
-//    - (BOOL)hasDetails;
-//
-//    - (NSArray *)photos;
-//
+    public boolean HasDetails() {
+        return false;
+    }
+
+    public List<JuxtaImage> Photos() {
+        List<JuxtaImage> photos = new ArrayList<JuxtaImage>();
+        photos.add(photo1);
+        photos.add(photo2);
+        photos.add(photo3);
+        photos.add(photo4);
+        return photos;
+    }
+}
+
 //    + (JUXUser *)currentUser;
-//
-//    @property (strong, nonatomic) NSString* id;
-//    @property (strong, nonatomic) NSString* email;
-//    @property (strong, nonatomic) NSString* firstName;
-//    @property (strong, nonatomic) NSString* lastName;
-//    @property (strong, nonatomic) JUXImage * avatar;
-//    @property (strong, nonatomic) JUXImage * photo1;
-//    @property (strong, nonatomic) JUXImage * photo2;
-//    @property (strong, nonatomic) JUXImage * photo3;
-//    @property (strong, nonatomic) JUXImage * photo4;
-//    @property (strong, nonatomic) NSString *tagline;
-//    @property (strong, nonatomic) NSDate *lastActive;
-//    @property (strong, nonatomic) NSDate *lastActivityCreatedAt;
-//    @property (assign, nonatomic) CGFloat averageReview;
-//    @property (strong, nonatomic) NSString *bio;
-//    @property (strong, nonatomic) NSString* fbId;
-//    @property (strong, nonatomic) NSArray* ownedActivities;
-//    @property (strong, nonatomic) JUXBadge* lastEarnedBadge;
-//    @property (strong, nonatomic) NSArray* badges;
-//    @property (strong, nonatomic) NSArray* reviews;
-//    @property (strong, nonatomic) NSArray* participations;
-//    @property (assign, nonatomic) NSInteger approvedParticipationCount;
-//    @property (assign, nonatomic) NSInteger subscribedToCount;
-//    @property (assign, nonatomic) NSInteger subscribersCount;
-//    @property (strong, nonatomic) NSArray* subscribers;
-//    @property (strong, nonatomic) NSArray* subscribedTo;
 //
 //    - (BOOL)isEqualToUser:(JUXUser *)other;
 //
@@ -87,4 +64,3 @@ public class JuxtaUser {
 //
 //    - (NSArray *)mutualSubscriptions;
 //    @end
-}
