@@ -44,6 +44,10 @@ public class JuxtaUser {
         photos.add(photo4);
         return photos;
     }
+
+//    public JuxtaUser currentUser() {
+//
+//    }
 }
 
 //    + (JUXUser *)currentUser;

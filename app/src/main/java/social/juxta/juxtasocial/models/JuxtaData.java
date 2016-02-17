@@ -1,10 +1,16 @@
 package social.juxta.juxtasocial.models;
 
-import java.util.Date;
-
 /**
- * Helper class to make all API calls.
+ * Created by Matt on 2/17/2016.
  */
 public class JuxtaData {
 
+    public
+
+    private static JuxtaSession CreateSession(String Email, String Password)
+    {
+        JuxtaSession newSession = new JuxtaSession();
+
+        JuxtaSession.setCurrentSession(newSession);
+    }
 }
