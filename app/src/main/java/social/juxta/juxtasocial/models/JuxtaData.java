@@ -5,12 +5,10 @@ package social.juxta.juxtasocial.models;
  */
 public class JuxtaData {
 
-    public
-
     private static JuxtaSession CreateSession(String Email, String Password)
     {
         JuxtaSession newSession = new JuxtaSession();
 
-        JuxtaSession.setCurrentSession(newSession);
+        return JuxtaSession.setCurrentSession(newSession);
     }
 }

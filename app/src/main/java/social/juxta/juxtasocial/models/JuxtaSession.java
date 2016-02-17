@@ -14,8 +14,9 @@ public class JuxtaSession {
 
     }
 
-    public static void setCurrentSession(JuxtaSession session)
+    public static JuxtaSession setCurrentSession(JuxtaSession session)
     {
         currentSession = session;
+        return currentSession;
     }
 }
