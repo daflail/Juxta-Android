@@ -14,45 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".NearMeActivity"
-            android:label="@string/title_activity_near_me"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TimelineActivity"
-            android:label="@string/title_activity_timeline"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".ProfileActivity"
-            android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".FollowersActivity"
-            android:label="@string/title_activity_followers"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ChatActivity"
-            android:label="@string/title_activity_chat"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ContactUsActivity"
-            android:label="@string/title_activity_contact_us"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ShareJuxtaActivity"
-            android:label="@string/title_activity_share_juxta"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

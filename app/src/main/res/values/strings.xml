@@ -90,4 +90,5 @@
     <string name="title_activity_chat">ChatActivity</string>
     <string name="title_activity_contact_us">Contact Us</string>
     <string name="title_activity_share_juxta">Share Juxta</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
