@@ -35,4 +35,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.1'
     compile 'com.mashape.unirest:unirest-java:1.4.8'
     compile 'io.reactivex:rxjava:1.0.10'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:23.0.+'
 }
