@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         SlidingMenu menu = new SlidingMenu(this);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        menu.setMode(SlidingMenu.LEFT);
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
