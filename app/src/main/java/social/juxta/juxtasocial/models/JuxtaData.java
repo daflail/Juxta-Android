@@ -19,7 +19,7 @@ public class JuxtaData {
     public static JuxtaSession CreateSession(String email, String password) //, Method callback)
     {
         JuxtaSession newSession = new JuxtaSession();
-        Future<HttpResponse<JsonNode>> jsonNodeHttpResponse = Unirest.post("https://juxtaapi.azurewebsites.net/api/User")
+        Future<HttpResponse<JsonNode>> jsonNodeHttpResponse = Unirest.post("https://juxtaapi.azurewebsites.net/api/Session")
                 // .header("Authorization", "Bearer " + token)  // For session token.
                 .field("Email", email)
                 .field("Password", password)
